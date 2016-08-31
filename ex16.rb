@@ -10,7 +10,7 @@ puts "Opening the file..."
 target = open(filename, 'w')
 
 puts "Truncating the file. Goodbye!"
-target.truncate(0)
+target.truncate(0)#This function is useless, because the "w" already cancelled the file for writing.
 
 puts "Now I'm going to ask you for three lines."
 
